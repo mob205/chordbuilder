@@ -1,0 +1,24 @@
+* {
+    margin: 2;
+    padding: 2;
+}
+table, th, tr {
+    border: 1px solid;
+    font-size: 50;
+}
+
+td {
+    text-align: center;
+}
+#rowStart {
+    text-align: center;
+    border: 1px solid;
+    font-size: 50;
+    width: 10%;
+}
+table {
+    width: 90%;
+}
+#leftmost {
+    width: 10%;
+}

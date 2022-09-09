@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chords by Scale Degree</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="chordpicker.js"></script>
+    </head>
+    <body>
+        <h1 id="header">Chords by Scale Degree</h1>
+        <!-- <form> -->
+        <label for="key">Key: </label><br>
+        <input type="text" id="keyInput" name="keyInput" maxlength="2" onchange="onType()">
+        <!-- </form> -->
+        <table>
+            <thead>
+                <tr>
+                    <th id="leftmost">Degrees:</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+
+            </tbody>
+        </table>
+    </body>
+</html>
