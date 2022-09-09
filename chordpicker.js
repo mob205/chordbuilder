@@ -1,4 +1,5 @@
 const alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+const enharmonics = {"A#":"Bb", "Cb":"B", "C#":"Db", "D#":"Eb", "E#":"F", "F#":"Gb", "G#":"A"}
 const keys = { "C":0, "F":1, "Bb":2, "Eb":3, "Ab":4, "Db":5, "Gb":6, "B":-5, "E":-4, "A":-3, "D":-2, "G":-1};
 const chordIndices = [0, 2, 4];
 const chordIndexText = ["Root (scale)", "3rd", "5th"];
@@ -6,6 +7,10 @@ var orderOfFlats = ["B", "E", "A", "D", "G", "C", "F"];
 
 function onType(){
     var input = document.getElementById(id="keyInput").value;
+
+    if(input in enharmonics){
+        input = enharmonics[input];
+    }
     if(input in keys){
         var signature = getSignature(input);
         var scale = getScale(input, signature);
